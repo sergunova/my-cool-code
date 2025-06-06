@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сложный сайт на Flexbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта: логотип + навигационное меню -->
+  <header class="header">
+    <div class="logo">МойСайт</div>
+    <nav class="menu">
+      <a href="#">Главная</a>
+      <a href="#">О нас</a>
+      <a href="#">Услуги</a>
+      <a href="#">Контакты</a>
+    </nav>
+  </header>
+
+  <!-- Основной контент -->
+  <main class="main">
+
+    <!-- Баннер-приветствие -->
+    <section class="hero">
+      <h1>Добро пожаловать!</h1>
+      <p>Мы создаём адаптивные сайты с Flexbox.</p>
+    </section>
+
+    <!-- Блок с контентом: карточки + боковая панель -->
+    <div class="content-area">
+
+      <!-- Секция с карточками -->
+      <section class="cards">
+        <div class="card">Карточка 1</div>
+        <div class="card">Карточка 2</div>
+        <div class="card">Карточка 3</div>
+      </section>
+
+      <!-- Боковая панель -->
+      <aside class="sidebar">
+        <h3>Новости</h3>
+        <p>Последние обновления сайта...</p>
+      </aside>
+
+    </div>
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="footer">
+    <div class="footer-column">
+      <h4>О нас</h4>
+      <p>Краткая информация.</p>
+    </div>
+    <div class="footer-column">
+      <h4>Ссылки</h4>
+      <ul>
+        <li><a href="#">Политика</a></li>
+        <li><a href="#">Условия</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h4>Контакты</h4>
+      <p>email@example.com</p>
+    </div>
+  </footer>
+
+</body>
+</html>
