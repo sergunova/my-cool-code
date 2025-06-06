@@ -1,0 +1,100 @@
+/* Сброс отступов и стандартных стилей */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Базовые стили для body */
+body {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* чтобы подвал был снизу */
+}
+
+/* Стили для ссылок */
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+/* Шапка сайта */
+.header {
+  display: flex;
+  justify-content: space-between; /* логотип слева, меню справа */
+  align-items: center;
+  background: #333;
+  padding: 20px;
+  color: white;
+}
+
+/* Навигация */
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Основная часть сайта */
+.main {
+  flex: 1; /* растягивается на всё оставшееся место */
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+/* Приветственный баннер */
+.hero {
+  background: #ddd;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Контейнер с карточками и сайдбаром */
+.content-area {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* позволяет адаптироваться на маленьких экранах */
+}
+
+/* Карточки */
+.cards {
+  display: flex;
+  flex: 3; /* занимает больше места, чем сайдбар */
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  flex: 1 1 200px; /* адаптивная ширина */
+  min-width: 200px;
+}
+
+/* Сайдбар */
+.sidebar {
+  flex: 1;
+  background: #eaeaea;
+  padding: 20px;
+}
+
+/* Подвал */
+.footer {
+  display: flex;
+  flex-wrap: wrap; /* колонки становятся вертикальными на узких экранах */
+  justify-content: space-around;
+  background: #333;
+  color: white;
+  padding: 30px 20px;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+}
